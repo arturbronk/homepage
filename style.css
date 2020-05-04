@@ -61,12 +61,6 @@ body h2,h3 {
     display: inline;
 }
 
-/* pre {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1em 0px;
-} */
 
 .code {
     border: 2px solid grey;
@@ -77,38 +71,7 @@ body h2,h3 {
     font-family: monospace;
 }
 
-/* .code-syntax {
-    overflow: auto;
-    width: 90%;
-    padding: 20px 12px 20px 5px;
-    background: rgb(245, 168, 187);
-    border-radius: 5px;
-    font-size: 14px;
-} */
 
-/* #name{
-    color: red;
-} */
-
-/* nav a {
-    color: darkolivegreen;
-    background: skyblue;
-} */
-
-
-    /* #main-header {
-        color: greenyellow;
-    } */
-    
-  
-
-    /* body .main #main-header {
-        color:red;
-    }
-
-    body .section #main-header {
-        color: yellow;
-    } */
 
 
 
