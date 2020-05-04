@@ -1,0 +1,116 @@
+body { 
+    background:#fffefe;
+    color:rgb(37, 35, 35);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+li {
+    padding: 5px;
+}
+
+
+.tag {    
+    color: darkred;
+    font-family: monospace;
+    font-weight: 900;    
+}
+
+.attribute {    
+    color: green;
+    font-family: monospace;
+    font-weight: bold; 
+}
+
+.selector {    
+    color: rgb(122, 97, 28);
+    font-family: monospace
+    font-weight: bold; 
+}
+
+body h2,h3 {
+    color: grey;
+    } 
+    
+.main-header {
+    color: grey;
+    text-shadow: 2px 2px 0 #000000;
+
+}  
+
+.navigation-link {
+    color: purple;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.summary-remember-header {
+    font-size: 1.10em;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: sticky;
+    float: right;
+}
+
+.navigation li {
+    display: inline;
+}
+
+/* pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+} */
+
+.code {
+    border: 2px solid grey;
+    width: 450px;
+    border-left: 12px solid olive;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    font-family: monospace;
+}
+
+/* .code-syntax {
+    overflow: auto;
+    width: 90%;
+    padding: 20px 12px 20px 5px;
+    background: rgb(245, 168, 187);
+    border-radius: 5px;
+    font-size: 14px;
+} */
+
+/* #name{
+    color: red;
+} */
+
+/* nav a {
+    color: darkolivegreen;
+    background: skyblue;
+} */
+
+
+    /* #main-header {
+        color: greenyellow;
+    } */
+    
+  
+
+    /* body .main #main-header {
+        color:red;
+    }
+
+    body .section #main-header {
+        color: yellow;
+    } */
+
+
+
+
+

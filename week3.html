@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>III week</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a class="navigation-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="week2.html">II week</a>
+                </li>
+                <li>
+                    <a class="navigation-link" href="week3.html">III week</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="top">
+            <header>
+                <h1>
+                    III tydzień
+                </h1>
+            </header>
+        </section>
+        <section>
+            <header>
+                <h2>Lekcje z trzeciego tygodnia</h2>
+                <img src="img/week3.jpg" alt="Zdjęcie tydzień III" width="300" height="300">
+            </header>
+            <article>
+                <h3>W03E02 - Kanban</h3>
+                <p>Wprowadzenie do Kanban i informację jak używać na przykładzie Trello i podstawowego układu: To do >
+                    Doing > Done</p>
+            </article>
+            <article>
+                <h3>W03E03 - HTML II</h3>
+                <p>Znacznik <span class="tag">&lt;strong&gt;</span> podkreśla istotność i poważność frazy w nim
+                    zawartej.</p>
+                <p>Znacznik <span class="tag">&lt;em&gt;</span> podkreśla inne znaczenie tekstu np. ironię</p>
+                <p>Znaczniki <span class="tag">&lt;b&gt;</span> i <span class="tag">&lt;i&gt;</span>nie mają znaczenia
+                    semantycznego tzn. są tylko wyróżnikami</p>
+                <p class="code">
+                    <span class="tag">&lt;a</span>
+                    <span class="attribute">href="target"</span>
+                    <span class="tag">&gt;</span>opis łącza<span class="tag">&lt;&sol;a&gt;</span>
+                </p>
+                <p>Link wewnętrzny - podajemy atrybut id do sekcji np.</p>
+                <p class="code">
+                    <span class="tag">&lt;section id ="notatki"&gt;</span><br>
+                    <span class="tag">&lt;a</span>
+                    <span class="attribute">href="#notatki"</span>
+                    <span class="tag">&gt;</span>Czytaj notatki<span class="tag">&lt;&sol;a&gt;</span>
+                </p>
+                <p>Znacznik <span class="tag">&lt;nav&gt;</span>
+                    znacznik nawigacji, który umieszczamy wraz z znacznikiem
+                    <span class="tag">&lt;header&gt;</span>
+                    nad znacznikiem <span class="tag">&lt;main&gt;</span>
+                    dla nagłówka, który będzie powtarzalny na podstronach.
+                </p>
+                <p>To samo tyczy się znacznika <span class="tag">&lt;footer&gt;</span>
+                    , który wyrzucamy poza <span class="tag">&lt;main&gt;</span>
+                    <p class="code">
+                        <span class="tag">&lt;img</span> <span class="attribute">src = "plik" alt="Tekst
+                            alternatywny"</span>
+                        <span class="tag">&sol;&gt;</span>
+                        - jest to znacznik samodomykający się
+                    </p>
+
+                    <h3 class="summary-remember-header">Podsumowanie</h3>
+                    <ul>
+                        <li>Atrybuty są "niewidzialne" - chowamy je w znacznikuy</li>
+                        <li>Nadają elementom dodatkowe właściwości (href, src)</li>
+                        <li>Pozwalają na grupowanie elementów (class)</li>
+                        <li>Pozwalają na identyfikowanie elementów (id)</li>
+                        <li>Można je miksować</li>
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+                                target="blank">
+                                Spis atrybutów "globalnych"</a>
+                        </li>
+                    </ul>
+
+            </article>
+            <article>
+                <h3>W03E04 - wąż, kebab, wielbłąd i Pascal</h3>
+                <p>Trzymamy się jednego schematu nazewnictwa rzeczy. Konsekwencja jest to istotna.</p>
+                <h3 class="summary-remember-header">Konwencja nazewnictwa</h3>
+                <ul>
+                    <li>camelCase (wielbłąd) np. mySuperBoldHeader</li>
+                    <li>kebab-case (kebab) np. my-super-bold-header</li>
+                    <li>snake_case (wąż) np. my_super_bold_header</li>
+                    <li>PascalCase (Pascal np. MySuperBoldHeader)</li>
+                </ul>
+            </article>
+            <article>
+                <h3>W03E05 - CSS II</h3>
+                <section>
+                    <h4>Style inline, klasy, selektor id & łączenie selektorów</h4>
+                    <p>Styl przy znaczniku z wykorzystaniem atrybutu <i>style</i> nazywamy stylem <i>inline</i></p>
+                    <p class="code">
+                        <span class="tag">&lt;znacznik</span>
+                        <span class="attribute">style="color:yellow"</span><span class="tag">&gt;</span>treść<span
+                            class="tag">&lt;&sol;znacznik&gt;</span></p>
+                    <p>Klasa - .() - selektor klasy. Odwołujemy się do niej podając nazwę klasy po kropce.</p>
+                    <p class="code">
+                        <span class="tag">&lt;znacznik</span>
+                        <span class="attribute">class="name"</span>
+                        <span class="tag">&gt;</span>treść<span class="tag">&lt;&sol;znacznik&gt;</span>
+                    </p>
+                    <p class="code">
+                        .name {<br>
+                        właściwość: wartość;<br>
+                        }
+                    </p>
+                    <p>Przykład:</p>
+                    <p class="code">
+                        .duza-czcionka {<br>
+                        font-size: 60px;<br>
+                        }
+                    </p>
+                    <p>ID - #(hash) - selektor id. Odwołujemy się podając nazwę po #</p>
+                    <p class="code">
+                        <span class="tag">&lt;znacznik</span>
+                        <span class="attribute">id="name"</span>
+                        <span class="tag">&gt;</span>treść<span class="tag">&lt;&sol;znacznik&gt;</span>
+                    </p>
+                    <p class="code">
+                        #name {<br>
+                        właściwość: wartość;<br>
+                        }
+                    </p>
+                    <p>Przykład:</p>
+                    <p class="code">
+                        #moje-id-znacznika {<br>
+                        właściwość: wartość;<br>
+                        }
+                    </p>
+                    <p>Łączenie selektorów - przykład</p>
+                    <p class="code">
+                        nav a {<br>
+                        color: #fff333;<br>
+                        }
+                    </p>
+                    <p>Dotyczy linków w sekcji parent czyli &lt;nav&gt; jak i wyżej np. header nav a</p>
+                    <p>!important; nadpisuje wszystkie inne style</p>
+                </section>
+                <section>
+                    <h4>Specyficzność CSS</h4>
+                    <img src="img/css-specyficznosc.png" alt="CSS css-specyficznosc" height="120">
+                    <p>Maciek rekomenduję dodawać klasy do wszystkich elementów i unikać zagnieżdżeń</p>
+                </section>
+                <section>
+                    <h4>Nazewnictwo klas</h4>
+                    <ul>
+                        <li>używaj pojedynczych słów z j. angielskiego</li>
+                        <li>nazywaj rzeczy zgodnie z ich funkcją na stronie</li>
+                        <li>startuj z małej litery np. header nie Header</li>
+                        <li>nie zaczynaj od cyfry</li>
+                        <li>jeśli musisz użyć dwóch słów użyj tzw. kebab case np. news-listing</li>
+                        <li>staraj się, żeby element miał jedną klasę (nie zwiększaj specyficzności bez potrzeby)</li>
+                    </ul>
+                </section>
+
+                <h3 class="summary-remember-header">Podsumowanie</h3>
+                <ul>
+                    <li>html class="name" = css .name</li>
+                    <li>html id="name" = css #name</li>
+                    <li>stylujemy po klasach (bez zagnieżdżeń!)</li>
+                    <li>nazywamy klasy po angielsku zgodnie z przeznaczeniem</li>
+                    <li>tworzymy klasy nawet mamy jeden element danego typu</li>
+                    <li>specyficzność może dać popalić ;)</li>
+                    <li>nie używamy !important i stylów inline'owych</li>
+                </ul>
+
+            </article>
+
+            <article>
+                <h3>W03E06 - jak działa internet i przeglądarka</h3>
+                <!-- <p>F12 - uruchamia DevTools</p> -->
+            </article>
+
+            <article>
+                <h3>W03E07 - JavaScript aka JS</h3>
+                <!-- <p>F12 - uruchamia DevTools</p> -->
+            </article>
+
+            <article>
+                <h3>W03E08 - terminal</h3>
+                <!-- <p>F12 - uruchamia DevTools</p> -->
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="#top">Wróć na górę</a>
+        </p>
+        <p>III tydzień</p>
+    </footer>
+
+</body>
+
+</html>
