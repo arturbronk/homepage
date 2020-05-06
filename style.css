@@ -1,72 +1,93 @@
-body { 
-    background:#fffefe;
-    color:rgb(37, 35, 35);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+body {
+  background: white;
+  color: rgb(37, 35, 35);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-li {
-    padding: 5px;
+body h2,
+h3 {
+  color: grey;
 }
 
-
-.tag {    
-    color: darkred;
-    font-family: monospace;
-    font-weight: 900;    
+.attribute {
+  color: green;
+  font-family: monospace;
+  font-weight: bold;
 }
 
-.attribute {    
-    color: green;
-    font-family: monospace;
-    font-weight: bold; 
+.code {
+  border: 2px solid grey;
+  width: 450px;
+  border-left: 12px solid olive;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  font-family: monospace;
 }
 
-.selector {    
-    color: rgb(122, 97, 28);
-    font-family: monospace
-    font-weight: bold; 
+.footer {
+  box-sizing: border-box;
+  width: 1000px;
+  background: fffefe;
+  border: 1px solid rgb(72, 72, 72);
+  margin: auto; 
+  padding-left: 10px;  
 }
 
-body h2,h3 {
-    color: grey;
-    } 
-    
+.main {
+  box-sizing: border-box;
+  width: 1000px;
+  background: fffefe;
+  border: 1px solid grey;
+  margin: auto; 
+  padding-left: 10px; 
+  padding-top: 50px; 
+  
+  }
+
 .main-header {
-    color: grey;
-    text-shadow: 2px 2px 0 #000000;
-
-}  
-
-.navigation-link {
-    color: purple;
-    text-decoration: none;
-    text-transform: uppercase;
-
-}
-
-.summary-remember-header {
-    font-size: 1.10em;
+  color: grey;
+  text-shadow: 2px 2px 0 #000000;
 }
 
 .navigation {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    position: sticky;
-    float: right;
+  box-sizing: border-box;
+  width: 1000px;
+  background: yellow;
+  border: 1px solid grey;
+  margin: auto;  
+  position: fixed; 
+  left: 50%;
+  right: 50%;
+  top:0;  
+transform: translateX(-50%); /*nie rozumiem jeszcze tego rozwiazania ale centrowanie na sztywno tez nie ma sensu*/
+
+  
 }
 
-.navigation li {
-    display: inline;
+.navigation-list {
+  padding: 5px;
+  display: inline;
 }
 
+.navigation-link {
+  color: purple;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
-.code {
-    border: 2px solid grey;
-    width: 450px;
-    border-left: 12px solid olive;
-    border-radius: 5px;
-    padding: 10px 10px 10px 10px;
-    font-family: monospace;
+.selector {
+  color: rgb(122, 97, 28);
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.tag {
+  color: darkred;
+  font-family: monospace;
+  font-weight: 900;
+}
+
+.summary-remember-header {
+  font-size: 1.1em;
 }
