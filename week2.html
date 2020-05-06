@@ -14,18 +14,18 @@
   <body>
     <header>
       <nav class="navigation">
-        <ul class="navigation-ul">
-          <li class="navigation-list">
-            <a class="navigation-link" href="index.html">Home</a>
+        <ul class="navigation__list">
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="index.html">Home</a>
           </li>
-          <li class="navigation-list">
-            <a class="navigation-link" href="week2.html">II week</a>
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="week2.html">II week</a>
           </li>
-          <li class="navigation-list">
-            <a class="navigation-link" href="week3.html">III week</a>
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="week3.html">III week</a>
           </li>
-          <li class="navigation-list">
-            <a class="navigation-link" href="week4.html">IV week</a>
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="week4.html">IV week</a>
           </li>
         </ul>
       </nav>
@@ -34,18 +34,18 @@
     <main class="main">
       <section id="top">
         <header>
-          <h1 class="main-header">
+          <h1 class="main__headers main__headers--title">
             II TYDZIEŃ
           </h1>
         </header>
       </section>
       <section>
         <header>
-          <h2>Lekcje z drugiego tygodnia</h2>
+          <h2 class="main__headers">Lekcje z drugiego tygodnia</h2>
           <img src="img/week2.jpg" alt="Zdjęcie tydzień II" height="300" />
         </header>
         <article>
-          <h3>W02E02 - warstwy strony</h3>
+          <h3 class="main__headers">W02E02 - warstwy strony</h3>
           <ol start="0">
             <li>JavaScript</li>
             <li>CSS</li>
@@ -54,24 +54,37 @@
           </ol>
         </article>
         <article>
-          <h3>W02E03 - HTML</h3>
+          <h3 class="main__headers">W02E03 - HTML</h3>
           <p>
-            <span class="tag">&lt;znacznik</span>
-            <span class="attribute">atrybut = "wartość"</span
-            ><span class="tag">&gt;</span>treść<span class="tag"
+            <span class="article__code-tag">&lt;znacznik</span>
+            <span class="article__code-attribute">atrybut = "wartość"</span
+            ><span class="article__code-tag">&gt;</span>treść<span
+              class="article__code-tag"
               >&lt;&sol;znacznik&gt;</span
             >
           </p>
           <p>HTML jest semantyczny czyli mający znaczenie.</p>
-          <p><span class="tag">&lt;main&gt;</span> - główna część dokumentu</p>
-          <p><span class="tag">&lt;section&gt;</span> - sekcje dokumentu</p>
-          <p><span class="tag">&lt;article&gt;</span> - samodzielne treści</p>
           <p>
-            <span class="tag">&lt;header&gt;</span> - nagłówek dokumentu, sekcji
-            czy artykułu
+            <span class="article__code-tag">&lt;main&gt;</span> - główna część
+            dokumentu
           </p>
-          <p><span class="tag">&lt;footer&gt;</span> - stopka dokumentu</p>
-          <h3 class="summary-remember-header">Podsumowanie</h3>
+          <p>
+            <span class="article__code-tag">&lt;section&gt;</span> - sekcje
+            dokumentu
+          </p>
+          <p>
+            <span class="article__code-tag">&lt;article&gt;</span> - samodzielne
+            treści
+          </p>
+          <p>
+            <span class="article__code-tag">&lt;header&gt;</span> - nagłówek
+            dokumentu, sekcji czy artykułu
+          </p>
+          <p>
+            <span class="article__code-tag">&lt;footer&gt;</span> - stopka
+            dokumentu
+          </p>
+          <h3 class="main__headers">Podsumowanie</h3>
           <ul>
             <li>HTML opakowuje i opisuje treść strony</li>
             <li>Mówi przeglądarce o strukturze dokumentu i co wczytać</li>
@@ -79,20 +92,22 @@
             <li>Jest językiem znaczników (Markup Language)</li>
             <li>Aktualna wersja to 5.2 - specyfikacja na w3c</li>
           </ul>
-          <h3 class="summary-remember-header">Zapamiętaj</h3>
+          <h3 class="main__headers">Zapamiętaj</h3>
           <p>
-            Każdy element &lt;section&gt; powinien zazwyczaj zawierać nagłówek
-            (&lt;h1&gt;-&lt;h6&gt;) jako element potomny &lt;section&gt;.
+            Każdy element
+            <span class="article__code-tag">&lt;section&gt;</span> powinien
+            zazwyczaj zawierać nagłówek (&lt;h1&gt;-&lt;h6&gt;) jako element
+            potomny <span class="article__code-tag">&lt;section&gt;</span>.
           </p>
         </article>
         <article>
-          <h3>W02E04 - CSS</h3>
-          <div class="code">
+          <h3 class="main__headers">W02E04 - CSS</h3>
+          <div class="article__code-box">
             selector {<br />
             właściwość: wartość;<br />
             }
           </div>
-          <h3 class="summary-remember-header">Podsumowanie</h3>
+          <h3 class="main__headers">Podsumowanie</h3>
           <ul>
             <li>Selektor wybiera co chcemy ostylować</li>
             <li>CSS odpowaida za prezentację treści strony</li>
@@ -101,7 +116,7 @@
           </ul>
         </article>
         <article>
-          <h3>W02E05 - magia programowania</h3>
+          <h3 class="main__headers">W02E05 - magia programowania</h3>
           <p>Algorytmy - omówienie schematów blokowych</p>
           <p>JS JavaScript</p>
           <ul>
@@ -113,7 +128,7 @@
         </article>
 
         <article>
-          <h3>W02E06 - DevTools podglądamy</h3>
+          <h3 class="main__headers">W02E06 - DevTools podglądamy</h3>
           <p>F12 - uruchamia DevTools</p>
         </article>
       </section>

@@ -5,24 +5,24 @@ body {
   font-size: 18px;
 }
 
-body h2,
-h3 {
-  color: #8cbcb9;
-}
-
-.attribute {
+.article__code-attribute {
   color: green;
   font-family: monospace;
   font-weight: bold;
 }
-
-.code {
+.article__code-box {
   border: 2px solid grey;
   width: 450px;
   border-left: 12px solid olive;
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
   font-family: monospace;
+}
+
+.article__code-tag {
+  color: darkred;
+  font-family: monospace;
+  font-weight: 900;
 }
 
 .footer {
@@ -37,14 +37,21 @@ h3 {
   box-sizing: border-box;
   width: 1000px;
   background: #f0f7ef;
-  margin: auto;
   padding-left: 10px;
   padding-top: 50px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-bottom: -20px; /*while a positive margin value pushes other elements away, a negative margin will either pull the element itself in that direction, or pull other elements toward it*/
 }
 
-.main-header {
+.main__headers {
   color: #8cbcb9;
+  text-transform: uppercase;
+}
+
+.main__headers--title {
   text-shadow: 2px 2px 0 #000000;
+  font-size: 1.5em; /*overwritting default UAS font-size for the section h1 so it fits article h1 on the remaining pages*/
 }
 
 .navigation {
@@ -59,36 +66,20 @@ h3 {
   top: 0;
   transform: translateX(
     -50%
-  ); /*nie rozumiem jeszcze tego rozwiazania ale centrowanie na sztywno tez nie ma sensu*/
+  ); /*I do not understand this yet but adding fixed margins doesn't make sense?*/
 }
 
-.navigation-list {
+.navigation__list {
+  padding-inline-start: 5px;
+}
+
+.navigation__list-element {
   padding: 5px;
   display: inline;
 }
 
-.navigation-link {
+.navigation__list-link {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.navigation-ul {
-  padding-inline-start: 5px;
-}
-
-.selector {
-  color: rgb(122, 97, 28);
-  font-family: monospace;
-  font-weight: bold;
-}
-
-.tag {
-  color: darkred;
-  font-family: monospace;
-  font-weight: 900;
-}
-
-.summary-remember-header {
-  font-size: 1.1em;
 }

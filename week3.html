@@ -14,18 +14,18 @@
   <body>
     <header>
       <nav class="navigation">
-        <ul class="navigation-ul">
-          <li class="navigation-list">
-            <a class="navigation-link" href="index.html">Home</a>
+        <ul class="navigation__list">
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="index.html">Home</a>
           </li>
-          <li class="navigation-list">
-            <a class="navigation-link" href="week2.html">II week</a>
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="week2.html">II week</a>
           </li>
-          <li class="navigation-list">
-            <a class="navigation-link" href="week3.html">III week</a>
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="week3.html">III week</a>
           </li>
-          <li class="navigation-list">
-            <a class="navigation-link" href="week4.html">IV week</a>
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="week4.html">IV week</a>
           </li>
         </ul>
       </nav>
@@ -34,14 +34,14 @@
     <main class="main">
       <section id="top">
         <header>
-          <h1 class="main-header">
+          <h1 class="main__headers main__headers--title">
             III TYDZIEŃ
           </h1>
         </header>
       </section>
       <section>
         <header>
-          <h2>Lekcje z trzeciego tygodnia</h2>
+          <h2 class="main__headers">Lekcje z trzeciego tygodnia</h2>
           <img
             src="img/week3.jpg"
             alt="Zdjęcie tydzień III"
@@ -50,64 +50,71 @@
           />
         </header>
         <article>
-          <h3>W03E02 - Kanban</h3>
+          <h3 class="main__headers">W03E02 - Kanban</h3>
           <p>
             Wprowadzenie do Kanban i informację jak używać na przykładzie Trello
             i podstawowego układu: To do > Doing > Done
           </p>
         </article>
         <article>
-          <h3>W03E03 - HTML II</h3>
+          <h3 class="main__headers">W03E03 - HTML II</h3>
           <p>
-            Znacznik <span class="tag">&lt;strong&gt;</span> podkreśla istotność
-            i poważność frazy w nim zawartej.
+            Znacznik
+            <span class="article__code-tag">&lt;strong&gt;</span> podkreśla
+            istotność i poważność frazy w nim zawartej.
           </p>
           <p>
-            Znacznik <span class="tag">&lt;em&gt;</span> podkreśla inne
-            znaczenie tekstu np. ironię
+            Znacznik <span class="article__code-tag">&lt;em&gt;</span> podkreśla
+            inne znaczenie tekstu np. ironię
           </p>
           <p>
-            Znaczniki <span class="tag">&lt;b&gt;</span> i
-            <span class="tag">&lt;i&gt;</span>nie mają znaczenia semantycznego
-            tzn. są tylko wyróżnikami
+            Znaczniki <span class="article__code-tag">&lt;b&gt;</span> i
+            <span class="article__code-tag">&lt;i&gt;</span>nie mają znaczenia
+            semantycznego tzn. są tylko wyróżnikami
           </p>
-          <p class="code">
-            <span class="tag">&lt;a</span>
-            <span class="attribute">href="target"</span>
-            <span class="tag">&gt;</span>opis łącza<span class="tag"
+          <p class="article__code-box">
+            <span class="article__code-tag">&lt;a</span>
+            <span class="article__attribute-code">href="target"</span>
+            <span class="article__code-tag">&gt;</span>opis łącza<span
+              class="article__code-tag"
               >&lt;&sol;a&gt;</span
             >
           </p>
           <p>Link wewnętrzny - podajemy atrybut id do sekcji np.</p>
-          <p class="code">
-            <span class="tag">&lt;section id ="notatki"&gt;</span><br />
-            <span class="tag">&lt;a</span>
-            <span class="attribute">href="#notatki"</span>
-            <span class="tag">&gt;</span>Czytaj notatki<span class="tag"
+          <p class="article__code-box">
+            <span class="article__code-tag">&lt;section id ="notatki"&gt;</span
+            ><br />
+            <span class="article__code-tag">&lt;a</span>
+            <span class="article__attribute-code">href="#notatki"</span>
+            <span class="article__code-tag">&gt;</span>Czytaj notatki<span
+              class="article__code-tag"
               >&lt;&sol;a&gt;</span
             >
           </p>
           <p>
-            Znacznik <span class="tag">&lt;nav&gt;</span>
+            Znacznik <span class="article__code-tag">&lt;nav&gt;</span>
             znacznik nawigacji, który umieszczamy wraz z znacznikiem
-            <span class="tag">&lt;header&gt;</span>
-            nad znacznikiem <span class="tag">&lt;main&gt;</span>
+            <span class="article__code-tag">&lt;header&gt;</span>
+            nad znacznikiem <span class="article__code-tag">&lt;main&gt;</span>
             dla nagłówka, który będzie powtarzalny na podstronach.
           </p>
           <p>
             To samo tyczy się znacznika
-            <span class="tag">&lt;footer&gt;</span> , który wyrzucamy poza
-            <span class="tag">&lt;main&gt;</span>
+            <span class="article__code-tag">&lt;footer&gt;</span> , który
+            wyrzucamy poza
+            <span class="article__code-tag">&lt;main&gt;</span>
           </p>
 
-          <p class="code">
-            <span class="tag">&lt;img</span>
-            <span class="attribute">src = "plik" alt="Tekst alternatywny"</span>
-            <span class="tag">&sol;&gt;</span>
+          <p class="article__code-box">
+            <span class="article__code-tag">&lt;img</span>
+            <span class="article__attribute-code"
+              >src = "plik" alt="Tekst alternatywny"</span
+            >
+            <span class="article__code-tag">&sol;&gt;</span>
             - jest to znacznik samodomykający się
           </p>
 
-          <h3 class="summary-remember-header">Podsumowanie</h3>
+          <h3 class="main__headers summary-remember-header">Podsumowanie</h3>
           <ul>
             <li>Atrybuty są "niewidzialne" - chowamy je w znacznikuy</li>
             <li>Nadają elementom dodatkowe właściwości (href, src)</li>
@@ -116,7 +123,7 @@
             <li>Można je miksować</li>
             <li>
               <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_article__attribute-codes"
                 target="blank"
               >
                 Spis atrybutów "globalnych"</a
@@ -125,12 +132,14 @@
           </ul>
         </article>
         <article>
-          <h3>W03E04 - wąż, kebab, wielbłąd i Pascal</h3>
+          <h3 class="main__headers">W03E04 - wąż, kebab, wielbłąd i Pascal</h3>
           <p>
             Trzymamy się jednego schematu nazewnictwa rzeczy. Konsekwencja jest
             to istotna.
           </p>
-          <h3 class="summary-remember-header">Konwencja nazewnictwa</h3>
+          <h3 class="main__headers summary-remember-header">
+            Konwencja nazewnictwa
+          </h3>
           <ul>
             <li>camelCase (wielbłąd) np. mySuperBoldHeader</li>
             <li>kebab-case (kebab) np. my-super-bold-header</li>
@@ -139,17 +148,18 @@
           </ul>
         </article>
         <article>
-          <h3>W03E05 - CSS II</h3>
+          <h3 class="main__headers">W03E05 - CSS II</h3>
           <section>
             <h4>Style inline, klasy, selektor id & łączenie selektorów</h4>
             <p>
               Styl przy znaczniku z wykorzystaniem atrybutu
               <i>style</i> nazywamy stylem <i>inline</i>
             </p>
-            <p class="code">
-              <span class="tag">&lt;znacznik</span>
-              <span class="attribute">style="color:yellow"</span
-              ><span class="tag">&gt;</span>treść<span class="tag"
+            <p class="article__code-box">
+              <span class="article__code-tag">&lt;znacznik</span>
+              <span class="article__attribute-code">style="color:yellow"</span
+              ><span class="article__code-tag">&gt;</span>treść<span
+                class="article__code-tag"
                 >&lt;&sol;znacznik&gt;</span
               >
             </p>
@@ -157,45 +167,47 @@
               Klasa - .() - selektor klasy. Odwołujemy się do niej podając nazwę
               klasy po kropce.
             </p>
-            <p class="code">
-              <span class="tag">&lt;znacznik</span>
-              <span class="attribute">class="name"</span>
-              <span class="tag">&gt;</span>treść<span class="tag"
+            <p class="article__code-box">
+              <span class="article__code-tag">&lt;znacznik</span>
+              <span class="article__attribute-code">class="name"</span>
+              <span class="article__code-tag">&gt;</span>treść<span
+                class="article__code-tag"
                 >&lt;&sol;znacznik&gt;</span
               >
             </p>
-            <p class="code">
+            <p class="article__code-box">
               .name {<br />
               właściwość: wartość;<br />
               }
             </p>
             <p>Przykład:</p>
-            <p class="code">
+            <p class="article__code-box">
               .duza-czcionka {<br />
               font-size: 60px;<br />
               }
             </p>
             <p>ID - #(hash) - selektor id. Odwołujemy się podając nazwę po #</p>
-            <p class="code">
-              <span class="tag">&lt;znacznik</span>
-              <span class="attribute">id="name"</span>
-              <span class="tag">&gt;</span>treść<span class="tag"
+            <p class="article__code-box">
+              <span class="article__code-tag">&lt;znacznik</span>
+              <span class="article__attribute-code">id="name"</span>
+              <span class="article__code-tag">&gt;</span>treść<span
+                class="article__code-tag"
                 >&lt;&sol;znacznik&gt;</span
               >
             </p>
-            <p class="code">
+            <p class="article__code-box">
               #name {<br />
               właściwość: wartość;<br />
               }
             </p>
             <p>Przykład:</p>
-            <p class="code">
+            <p class="article__code-box">
               #moje-id-znacznika {<br />
               właściwość: wartość;<br />
               }
             </p>
             <p>Łączenie selektorów - przykład</p>
-            <p class="code">
+            <p class="article__code-box">
               nav a {<br />
               color: #fff333;<br />
               }
@@ -207,7 +219,7 @@
             <p>!important; nadpisuje wszystkie inne style</p>
           </section>
           <section>
-            <h4>Specyficzność CSS</h4>
+            <h4 class="main__headers">Specyficzność CSS</h4>
             <img
               src="img/css-specyficznosc.png"
               alt="CSS css-specyficznosc"
@@ -219,7 +231,7 @@
             </p>
           </section>
           <section>
-            <h4>Nazewnictwo klas</h4>
+            <h4 class="main__headers">Nazewnictwo klas</h4>
             <ul>
               <li>używaj pojedynczych słów z j. angielskiego</li>
               <li>nazywaj rzeczy zgodnie z ich funkcją na stronie</li>
@@ -236,7 +248,7 @@
             </ul>
           </section>
 
-          <h3 class="summary-remember-header">Podsumowanie</h3>
+          <h3 class="main__headers">Podsumowanie</h3>
           <ul>
             <li>html class="name" = css .name</li>
             <li>html id="name" = css #name</li>
@@ -249,17 +261,19 @@
         </article>
 
         <article>
-          <h3>W03E06 - jak działa internet i przeglądarka</h3>
+          <h3 class="main__headers">
+            W03E06 - jak działa internet i przeglądarka
+          </h3>
           <!-- <p>F12 - uruchamia DevTools</p> -->
         </article>
 
         <article>
-          <h3>W03E07 - JavaScript aka JS</h3>
+          <h3 class="main__headers">W03E07 - JavaScript aka JS</h3>
           <!-- <p>F12 - uruchamia DevTools</p> -->
         </article>
 
         <article>
-          <h3>W03E08 - terminal</h3>
+          <h3 class="main__headers">W03E08 - terminal</h3>
           <!-- <p>F12 - uruchamia DevTools</p> -->
         </article>
       </section>
