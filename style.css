@@ -1,16 +1,30 @@
-body {
+
+.about__header,
+.lesson__header,
+.lesson__remember,
+.lesson__sub-header,
+.lesson__summary,
+.main__header,
+.notes__header,
+.tricks__header,
+.week__header {
+  color: #8cbcb9;
+  text-transform: uppercase;
+}
+
+.body {
   background: #d7ded6;
   color: rgb(37, 35, 35);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 
-.article__code-attribute {
+.lesson__code-attribute {
   color: green;
   font-family: monospace;
   font-weight: bold;
 }
-.article__code-box {
+.lesson__code-box {
   border: 2px solid grey;
   width: 450px;
   border-left: 12px solid olive;
@@ -19,11 +33,24 @@ body {
   font-family: monospace;
 }
 
-.article__code-tag {
+.lesson__code-tag {
   color: darkred;
   font-family: monospace;
   font-weight: 900;
 }
+
+.lesson__list {  
+  background: linear-gradient(green, yellow, lightblue, #d7ded6);
+  /* background: linear-gradient(green, white); */
+  width: 300px;  
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.lesson__list-element {  
+  padding: 5px;  
+}
+
 
 .week_header {
   color: #8cbcb9;
@@ -49,12 +76,9 @@ body {
   margin-bottom: -20px; /*while a positive margin value pushes other elements away, a negative margin will either pull the element itself in that direction, or pull other elements toward it*/
 }
 
-.main__headers {
-  color: #8cbcb9;
-  text-transform: uppercase;
-}
 
-.main__headers--title {
+
+.main__header--title {
   text-shadow: 2px 2px 0 #000000;
   font-size: 1.5em; /*overwritting default UAS font-size for the section h1 so it fits article h1 on the remaining pages*/
 }
