@@ -1,4 +1,3 @@
-
 .about__header,
 .lesson__header,
 .lesson__remember,
@@ -19,11 +18,20 @@
   font-size: 18px;
 }
 
+.footer {
+  box-sizing: border-box;
+  width: 1000px;
+  background: #bfc5be;
+  margin: auto;
+  padding-left: 10px;
+}
+
 .lesson__code-attribute {
   color: green;
   font-family: monospace;
   font-weight: bold;
 }
+
 .lesson__code-box {
   border: 2px solid grey;
   width: 450px;
@@ -39,30 +47,15 @@
   font-weight: 900;
 }
 
-.lesson__list {  
+.lesson__list {
   background: linear-gradient(green, yellow, lightblue, #d7ded6);
-  /* background: linear-gradient(green, white); */
-  width: 300px;  
+  width: 300px;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
-.lesson__list-element {  
-  padding: 5px;  
-}
-
-
-.week_header {
-  color: #8cbcb9;
-  text-transform: uppercase;
-}
-
-.footer {
-  box-sizing: border-box;
-  width: 1000px;
-  background: #bfc5be;
-  margin: auto;
-  padding-left: 10px;
+.lesson__list-element {
+  padding: 5px;
 }
 
 .main {
@@ -75,8 +68,6 @@
   margin: auto;
   margin-bottom: -20px; /*while a positive margin value pushes other elements away, a negative margin will either pull the element itself in that direction, or pull other elements toward it*/
 }
-
-
 
 .main__header--title {
   text-shadow: 2px 2px 0 #000000;
@@ -110,5 +101,10 @@
 .navigation__list-link {
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.week_header {
+  color: #8cbcb9;
   text-transform: uppercase;
 }
