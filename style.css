@@ -48,7 +48,7 @@
   font-weight: 900;
 }
 
-.lesson__list {
+.lesson__list--gradient {
   background: linear-gradient(green, yellow, lightblue, #d7ded6);
   width: 300px;
   border-radius: 5px;
