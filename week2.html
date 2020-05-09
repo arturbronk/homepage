@@ -34,111 +34,133 @@
     <main class="main">
       <section id="top">
         <header>
-          <h1 class="main__headers main__headers--title">
+          <h1 class="main__header">
             II TYDZIEŃ
           </h1>
         </header>
       </section>
-      <section>
+      <section class="week">
         <header>
-          <h2 class="main__headers">Lekcje z drugiego tygodnia</h2>
+          <h2 class="week__header">Lekcje z drugiego tygodnia</h2>
           <img src="img/week2.jpg" alt="Zdjęcie tydzień II" height="300" />
         </header>
-        <article>
-          <h3 class="main__headers">W02E02 - warstwy strony</h3>
-          <ol start="0">
-            <li>JavaScript</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Treść</li>
+        <article class="lesson">
+          <h3 class="lesson__header">W02E02 - warstwy strony</h3>
+          <ol start="0" class="article__list">
+            <li class="lesson__list-element">JavaScript</li>
+            <li class="lesson__list-element">CSS</li>
+            <li class="lesson__list-element">HTML</li>
+            <li class="lesson__list-element">Treść</li>
           </ol>
         </article>
-        <article>
-          <h3 class="main__headers">W02E03 - HTML</h3>
-          <p>
-            <span class="article__code-tag">&lt;znacznik</span>
-            <span class="article__code-attribute">atrybut = "wartość"</span
-            ><span class="article__code-tag">&gt;</span>treść<span
-              class="article__code-tag"
+        <article class="lesson">
+          <h3 class="lesson__header">W02E03 - HTML</h3>
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;znacznik</span>
+            <span class="lesson__code-attribute">atrybut = "wartość"</span
+            ><span class="lesson__code-tag">&gt;</span>treść<span
+              class="lesson__code-tag"
               >&lt;&sol;znacznik&gt;</span
             >
           </p>
-          <p>HTML jest semantyczny czyli mający znaczenie.</p>
-          <p>
-            <span class="article__code-tag">&lt;main&gt;</span> - główna część
+          <p class="lesson__info">
+            HTML jest semantyczny czyli mający znaczenie.
+          </p>
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;main&gt;</span> - główna część
             dokumentu
           </p>
-          <p>
-            <span class="article__code-tag">&lt;section&gt;</span> - sekcje
+          <p class="lesson-info">
+            <span class="lesson__code-tag">&lt;section&gt;</span> - sekcje
             dokumentu
           </p>
-          <p>
-            <span class="article__code-tag">&lt;article&gt;</span> - samodzielne
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;article&gt;</span> - samodzielne
             treści
           </p>
-          <p>
-            <span class="article__code-tag">&lt;header&gt;</span> - nagłówek
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;header&gt;</span> - nagłówek
             dokumentu, sekcji czy artykułu
           </p>
-          <p>
-            <span class="article__code-tag">&lt;footer&gt;</span> - stopka
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;footer&gt;</span> - stopka
             dokumentu
           </p>
-          <h3 class="main__headers">Podsumowanie</h3>
-          <ul>
-            <li>HTML opakowuje i opisuje treść strony</li>
-            <li>Mówi przeglądarce o strukturze dokumentu i co wczytać</li>
-            <li>Posiada zdefiniowaną składnię</li>
-            <li>Jest językiem znaczników (Markup Language)</li>
-            <li>Aktualna wersja to 5.2 - specyfikacja na w3c</li>
+          <h3 class="lesson__summary">Podsumowanie</h3>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">
+              HTML opakowuje i opisuje treść strony
+            </li>
+            <li class="lesson__list-element">
+              Mówi przeglądarce o strukturze dokumentu i co wczytać
+            </li>
+            <li class="lesson__list-element">Posiada zdefiniowaną składnię</li>
+            <li class="lesson__list-element">
+              Jest językiem znaczników (Markup Language)
+            </li>
+            <li class="lesson__list-element">
+              Aktualna wersja to 5.2 - specyfikacja na w3c
+            </li>
           </ul>
-          <h3 class="main__headers">Zapamiętaj</h3>
-          <p>
+          <h3 class="lesson__remember">Zapamiętaj</h3>
+          <p class="lesson__info">
             Każdy element
-            <span class="article__code-tag">&lt;section&gt;</span> powinien
+            <span class="lesson__code-tag">&lt;section&gt;</span> powinien
             zazwyczaj zawierać nagłówek (&lt;h1&gt;-&lt;h6&gt;) jako element
-            potomny <span class="article__code-tag">&lt;section&gt;</span>.
+            potomny <span class="lesson__code-tag">&lt;section&gt;</span>.
           </p>
         </article>
-        <article>
-          <h3 class="main__headers">W02E04 - CSS</h3>
-          <div class="article__code-box">
+        <article class="lesson">
+          <h3 class="lesson__header">W02E04 - CSS</h3>
+          <div class="lesson__code-box">
             selector {<br />
             właściwość: wartość;<br />
             }
           </div>
-          <h3 class="main__headers">Podsumowanie</h3>
-          <ul>
-            <li>Selektor wybiera co chcemy ostylować</li>
-            <li>CSS odpowaida za prezentację treści strony</li>
-            <li>CSS nie ma wersji: moduł 3</li>
-            <li>Przeglądarki różnie interpretują style (w3c)</li>
+          <h3 class="lesson__summary">Podsumowanie</h3>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">
+              Selektor wybiera co chcemy ostylować
+            </li>
+            <li class="lesson__list-element">
+              CSS odpowaida za prezentację treści strony
+            </li>
+            <li class="lesson__list-element">CSS nie ma wersji: moduł 3</li>
+            <li class="lesson__list-element">
+              Przeglądarki różnie interpretują style (w3c)
+            </li>
           </ul>
         </article>
-        <article>
-          <h3 class="main__headers">W02E05 - magia programowania</h3>
-          <p>Algorytmy - omówienie schematów blokowych</p>
-          <p>JS JavaScript</p>
-          <ul>
-            <li>Odpowiada za interakcje</li>
-            <li>Pozwala na programowanie w frontend</li>
-            <li>Potrafi wpłynąć na każdą z wartw</li>
-            <li>Rozszerza możliwości zwykłych stron</li>
+        <article class="lesson">
+          <h3 class="lesson__header">W02E05 - magia programowania</h3>
+          <p class="lesson__info">Algorytmy - omówienie schematów blokowych</p>
+          <p class="lesson__info">JS JavaScript</p>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">Odpowiada za interakcje</li>
+            <li class="lesson__list-element">
+              Pozwala na programowanie w frontend
+            </li>
+            <li class="lesson__list-element">
+              Potrafi wpłynąć na każdą z wartw
+            </li>
+            <li class="lesson__list-element">
+              Rozszerza możliwości zwykłych stron
+            </li>
           </ul>
         </article>
 
-        <article>
-          <h3 class="main__headers">W02E06 - DevTools podglądamy</h3>
-          <p>F12 - uruchamia DevTools</p>
+        <article class="lesson">
+          <h3 class="lesson__header">W02E06 - DevTools podglądamy</h3>
+          <p class="lesson__article">F12 - uruchamia DevTools</p>
         </article>
       </section>
     </main>
 
     <footer class="footer">
-      <p>
-        <a href="#top">Wróć na górę</a>
+      <p class="footer__info">
+        <a class="footer__navigation-link" href="#top">Wróć na górę</a>
       </p>
-      <p>II tydzień</p>
+      <p class="footer__info">III tydzień</p>
     </footer>
   </body>
 </html>

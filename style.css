@@ -25,6 +25,11 @@ body {
   font-weight: 900;
 }
 
+.week_header {
+  color: #8cbcb9;
+  text-transform: uppercase;
+}
+
 .footer {
   box-sizing: border-box;
   width: 1000px;

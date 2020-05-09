@@ -33,63 +33,69 @@
 
     <main class="main">
       <header>
-        <h1 class="main__headers main__headers--title">
+        <h1 class="main__header main__header--title">
           WTF KURS - 13 TYGODNI
         </h1>
       </header>
 
-      <section>
-        <h2 class="main__headers">Kim jestem?</h2>
-        <p>
+      <section class="about">
+        <h2 class="about__header">Kim jestem?</h2>
+        <p class="about__info">
           Próbuje nadgonić czas i udowodnić sobie, że jeszcze nie zardzewiałem.
         </p>
       </section>
 
-      <section>
+      <section class="notes">
         <header>
-          <h2 class="main__headers">Notatki z WTF: Co ten frontend</h2>
+          <h2 class="notes__header">Notatki z WTF: Co ten frontend</h2>
         </header>
 
-        <article>
-          <h3 class="main__headers">Nie zapomnij</h3>
-          <ul>
-            <li>Lekcje odbywaja się raz w tygodniu.</li>
-            <li>Materiał jest podsyłany w poniedziałki.</li>
-            <li>Wycisz powiadomienia.</li>
-            <li>Obejrzyj wszystkie lekcje.</li>
-            <li>Zrób pracę domową.</li>
-            <li>Obejrzyj lekcje jeszcze raz.</li>
-            <li>Nie pomijaj odcinków.</li>
-            <li>Działaj regularnie.</li>
+        <article class="about__text">
+          <h3 class="about__header">Nie zapomnij</h3>
+          <ul class="about__list">
+            <li class="about__list-element">
+              Lekcje odbywaja się raz w tygodniu.
+            </li>
+            <li class="about__list-element">
+              Materiał jest podsyłany w poniedziałki.
+            </li>
+            <li class="about__list-element">Wycisz powiadomienia.</li>
+            <li class="about__list-element">Obejrzyj wszystkie lekcje.</li>
+            <li class="about__list-element">Zrób pracę domową.</li>
+            <li class="about__list-element">Obejrzyj lekcje jeszcze raz.</li>
+            <li class="about__list-element">Nie pomijaj odcinków.</li>
+            <li class="about__list-element">Działaj regularnie.</li>
           </ul>
         </article>
       </section>
 
-      <section>
-        <h2 class="main__headers">Skróty i inne podpatrzone tricki</h2>
-        <article>
-          <h3 class="main__headers">Przydatne linki</h3>
-          <p>Linki trzeba dodać</p>
-          <h3 class="main__headers">Skróty VSC</h3>
-          <p>
+      <section class="tricks">
+        <h2 class="tricks__header">Skróty i inne podpatrzone tricki</h2>
+        <article class="tricks__text">
+          <h3 class="tricks__header">Przydatne linki</h3>
+          <p class="tricks__info">Linki trzeba dodać</p>
+          <h3 class="tricks__header">Skróty VSC</h3>
+          <p class="tricks__info">
             <a href="nauka.html">Emmet</a>: wrap with abbreviation - zaznaczasz
             tekst, klikasz <kbd>Ctrl</kbd>+<kbd>Shit</kbd>+<kbd>P</kbd>,
             wisujesz wrap.<br />
             Zaznaczasz opcję Emmet: wrap with abbreviation
           </p>
-          <p>Emmet: Update Tag - updejtuje znaczniki (tagi)</p>
-          <h3 class="main__headers">Skróty Slack</h3>
-          <p><kbd>Shift</kbd>+<kbd>Enter</kbd> - nowa linia w Slack</p>
+          <p class="tricks__info">
+            Emmet: Update Tag - updejtuje znaczniki (tagi)
+          </p>
+          <h3 class="tricks__header">Skróty Slack</h3>
+          <p class="tricks__info">
+            <kbd>Shift</kbd>+<kbd>Enter</kbd> - nowa linia w Slack
+          </p>
         </article>
       </section>
     </main>
     <footer class="footer">
-      <p>
-        <a href="#top">Wróć na górę</a>
+      <p class="footer__info">
+        <a class="footer__navigation-link" href="#top">Wróć na górę</a>
       </p>
-      <p>
-        Moja strona z notatkami
-      </p>
+      <p class="footer__info">III tydzień</p>
     </footer>
 
     <script src="main.js"></script>

@@ -34,14 +34,14 @@
     <main class="main">
       <section id="top">
         <header>
-          <h1 class="main__headers main__headers--title">
+          <h1 class="main__header">
             III TYDZIEŃ
           </h1>
         </header>
       </section>
-      <section>
+      <section class="week">
         <header>
-          <h2 class="main__headers">Lekcje z trzeciego tygodnia</h2>
+          <h2 class="week_header">Lekcje z trzeciego tygodnia</h2>
           <img
             src="img/week3.jpg"
             alt="Zdjęcie tydzień III"
@@ -49,79 +49,89 @@
             height="300"
           />
         </header>
-        <article>
-          <h3 class="main__headers main__headers--js">W03E02 - Kanban</h3>
-          <p>
+        <article class="lesson">
+          <h3 class="lesson__header lesson_header--js">W03E02 - Kanban</h3>
+          <p class="lesson__info">
             Wprowadzenie do Kanban i informację jak używać na przykładzie Trello
             i podstawowego układu: To do > Doing > Done
           </p>
         </article>
-        <article>
-          <h3 class="main__headers">W03E03 - HTML II</h3>
-          <p>
+        <article class="lesson">
+          <h3 class="lesson__header">W03E03 - HTML II</h3>
+          <p class="lesson__info">
             Znacznik
-            <span class="article__code-tag">&lt;strong&gt;</span> podkreśla
+            <span class="lesson__code-tag">&lt;strong&gt;</span> podkreśla
             istotność i poważność frazy w nim zawartej.
           </p>
-          <p>
-            Znacznik <span class="article__code-tag">&lt;em&gt;</span> podkreśla
+          <p class="lesson__info">
+            Znacznik <span class="lesson__code-tag">&lt;em&gt;</span> podkreśla
             inne znaczenie tekstu np. ironię
           </p>
-          <p>
-            Znaczniki <span class="article__code-tag">&lt;b&gt;</span> i
-            <span class="article__code-tag">&lt;i&gt;</span>nie mają znaczenia
+          <p class="lesson__info">
+            Znaczniki <span class="lesson__code-tag">&lt;b&gt;</span> i
+            <span class="lesson__code-tag">&lt;i&gt;</span>nie mają znaczenia
             semantycznego tzn. są tylko wyróżnikami
           </p>
-          <p class="article__code-box">
-            <span class="article__code-tag">&lt;a</span>
-            <span class="article__attribute-code">href="target"</span>
-            <span class="article__code-tag">&gt;</span>opis łącza<span
-              class="article__code-tag"
+          <p class="lesson__code-box">
+            <span class="lesson__code-tag">&lt;a</span>
+            <span class="lesson__code-code">href="target"</span>
+            <span class="lesson__code-tag">&gt;</span>opis łącza<span
+              class="lesson__code-tag"
               >&lt;&sol;a&gt;</span
             >
           </p>
-          <p>Link wewnętrzny - podajemy atrybut id do sekcji np.</p>
-          <p class="article__code-box">
-            <span class="article__code-tag">&lt;section id ="notatki"&gt;</span
+          <p class="lesson__info">
+            Link wewnętrzny - podajemy atrybut id do sekcji np.
+          </p>
+          <p class="lesson__code-box">
+            <span class="lesson__code-tag">&lt;section id ="notatki"&gt;</span
             ><br />
-            <span class="article__code-tag">&lt;a</span>
-            <span class="article__attribute-code">href="#notatki"</span>
-            <span class="article__code-tag">&gt;</span>Czytaj notatki<span
-              class="article__code-tag"
+            <span class="lesson__code-tag">&lt;a</span>
+            <span class="lesson__code-code">href="#notatki"</span>
+            <span class="lesson__code-tag">&gt;</span>Czytaj notatki<span
+              class="lesson__code-tag"
               >&lt;&sol;a&gt;</span
             >
           </p>
-          <p>
-            Znacznik <span class="article__code-tag">&lt;nav&gt;</span>
+          <p class="lesson__info">
+            Znacznik <span class="lesson__code-tag">&lt;nav&gt;</span>
             znacznik nawigacji, który umieszczamy wraz z znacznikiem
-            <span class="article__code-tag">&lt;header&gt;</span>
-            nad znacznikiem <span class="article__code-tag">&lt;main&gt;</span>
+            <span class="lesson__code-tag">&lt;header&gt;</span>
+            nad znacznikiem <span class="lesson__code-tag">&lt;main&gt;</span>
             dla nagłówka, który będzie powtarzalny na podstronach.
           </p>
           <p>
             To samo tyczy się znacznika
-            <span class="article__code-tag">&lt;footer&gt;</span> , który
+            <span class="lesson__code-tag">&lt;footer&gt;</span> , który
             wyrzucamy poza
-            <span class="article__code-tag">&lt;main&gt;</span>
+            <span class="lesson__code-tag">&lt;main&gt;</span>
           </p>
 
-          <p class="article__code-box">
-            <span class="article__code-tag">&lt;img</span>
-            <span class="article__attribute-code"
+          <p class="lesson__code-box">
+            <span class="lesson__code-tag">&lt;img</span>
+            <span class="lesson__code-code"
               >src = "plik" alt="Tekst alternatywny"</span
             >
-            <span class="article__code-tag">&sol;&gt;</span>
+            <span class="lesson__code-tag">&sol;&gt;</span>
             - jest to znacznik samodomykający się
           </p>
 
-          <h3 class="main__headers summary-remember-header">Podsumowanie</h3>
-          <ul>
-            <li>Atrybuty są "niewidzialne" - chowamy je w znacznikuy</li>
-            <li>Nadają elementom dodatkowe właściwości (href, src)</li>
-            <li>Pozwalają na grupowanie elementów (class)</li>
-            <li>Pozwalają na identyfikowanie elementów (id)</li>
-            <li>Można je miksować</li>
-            <li>
+          <h3 class="lesson__summary">Podsumowanie</h3>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">
+              Atrybuty są "niewidzialne" - chowamy je w znacznikuy
+            </li>
+            <li class="lesson__list-element">
+              Nadają elementom dodatkowe właściwości (href, src)
+            </li>
+            <li class="lesson__list-element">
+              Pozwalają na grupowanie elementów (class)
+            </li>
+            <li class="lesson__list-element">
+              Pozwalają na identyfikowanie elementów (id)
+            </li>
+            <li class="lesson__list-element">Można je miksować</li>
+            <li class="lesson__list-element--link">
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_article__attribute-codes"
                 target="blank"
@@ -131,159 +141,189 @@
             </li>
           </ul>
         </article>
-        <article>
-          <h3 class="main__headers">W03E04 - wąż, kebab, wielbłąd i Pascal</h3>
-          <p>
+        <article class="lesson">
+          <h3 class="lesson__header">W03E04 - wąż, kebab, wielbłąd i Pascal</h3>
+          <p class="lesson__info">
             Trzymamy się jednego schematu nazewnictwa rzeczy. Konsekwencja jest
             to istotna.
           </p>
-          <h3 class="main__headers summary-remember-header">
+          <h3 class="lesson__header">
             Konwencja nazewnictwa
           </h3>
-          <ul>
-            <li>camelCase (wielbłąd) np. mySuperBoldHeader</li>
-            <li>kebab-case (kebab) np. my-super-bold-header</li>
-            <li>snake_case (wąż) np. my_super_bold_header</li>
-            <li>PascalCase (Pascal np. MySuperBoldHeader)</li>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">
+              camelCase (wielbłąd) np. mySuperBoldHeader
+            </li>
+            <li class="lesson__list-element">
+              kebab-case (kebab) np. my-super-bold-header
+            </li>
+            <li class="lesson__list-element">
+              snake_case (wąż) np. my_super_bold_header
+            </li>
+            <li class="lesson__list-element">
+              PascalCase (Pascal np. MySuperBoldHeader)
+            </li>
           </ul>
         </article>
-        <article>
-          <h3 class="main__headers">W03E05 - CSS II</h3>
+        <article class="lesson">
+          <h3 class="lesson__header">W03E05 - CSS II</h3>
           <section>
-            <h4>Style inline, klasy, selektor id & łączenie selektorów</h4>
-            <p>
+            <h4 class="lesson__sub-header">
+              Style inline, klasy, selektor id & łączenie selektorów
+            </h4>
+            <p class="lesson__info">
               Styl przy znaczniku z wykorzystaniem atrybutu
               <i>style</i> nazywamy stylem <i>inline</i>
             </p>
-            <p class="article__code-box">
-              <span class="article__code-tag">&lt;znacznik</span>
-              <span class="article__attribute-code">style="color:yellow"</span
-              ><span class="article__code-tag">&gt;</span>treść<span
-                class="article__code-tag"
+            <p class="lesson__code-box">
+              <span class="lesson__code-tag">&lt;znacznik</span>
+              <span class="lesson__code-code">style="color:yellow"</span
+              ><span class="lesson__code-tag">&gt;</span>treść<span
+                class="lesson__code-tag"
                 >&lt;&sol;znacznik&gt;</span
               >
             </p>
-            <p>
+            <p class="lesson__info">
               Klasa - .() - selektor klasy. Odwołujemy się do niej podając nazwę
               klasy po kropce.
             </p>
-            <p class="article__code-box">
-              <span class="article__code-tag">&lt;znacznik</span>
-              <span class="article__attribute-code">class="name"</span>
-              <span class="article__code-tag">&gt;</span>treść<span
-                class="article__code-tag"
+            <p class="lesson__code-box">
+              <span class="lesson__code-tag">&lt;znacznik</span>
+              <span class="lesson__code-code">class="name"</span>
+              <span class="lesson__code-tag">&gt;</span>treść<span
+                class="lesson__code-tag"
                 >&lt;&sol;znacznik&gt;</span
               >
             </p>
-            <p class="article__code-box">
+            <p class="lesson__code-box">
               .name {<br />
               właściwość: wartość;<br />
               }
             </p>
-            <p>Przykład:</p>
-            <p class="article__code-box">
+            <p class="lesson__info">Przykład:</p>
+            <p class="lesson__code-box">
               .duza-czcionka {<br />
               font-size: 60px;<br />
               }
             </p>
-            <p>ID - #(hash) - selektor id. Odwołujemy się podając nazwę po #</p>
-            <p class="article__code-box">
-              <span class="article__code-tag">&lt;znacznik</span>
-              <span class="article__attribute-code">id="name"</span>
-              <span class="article__code-tag">&gt;</span>treść<span
-                class="article__code-tag"
+            <p class="lesson__info">
+              ID - #(hash) - selektor id. Odwołujemy się podając nazwę po #
+            </p>
+            <p class="lesson__code-box">
+              <span class="lesson__code-tag">&lt;znacznik</span>
+              <span class="lesson__code-code">id="name"</span>
+              <span class="lesson__code-tag">&gt;</span>treść<span
+                class="lesson__code-tag"
                 >&lt;&sol;znacznik&gt;</span
               >
             </p>
-            <p class="article__code-box">
+            <p class="lesson__code-box">
               #name {<br />
               właściwość: wartość;<br />
               }
             </p>
-            <p>Przykład:</p>
-            <p class="article__code-box">
+            <p class="lesson__info">Przykład:</p>
+            <p class="lesson__code-box">
               #moje-id-znacznika {<br />
               właściwość: wartość;<br />
               }
             </p>
-            <p>Łączenie selektorów - przykład</p>
-            <p class="article__code-box">
+            <p class="lesson__info">Łączenie selektorów - przykład</p>
+            <p class="lesson__code-box">
               nav a {<br />
               color: #fff333;<br />
               }
             </p>
-            <p>
+            <p class="lesson__info">
               Dotyczy linków w sekcji parent czyli &lt;nav&gt; jak i wyżej np.
               header nav a
             </p>
-            <p>!important; nadpisuje wszystkie inne style</p>
+            <p class="lesson__info">
+              !important; nadpisuje wszystkie inne style
+            </p>
           </section>
           <section>
-            <h4 class="main__headers">Specyficzność CSS</h4>
+            <h4 class="lesson__sub-header">Specyficzność CSS</h4>
             <img
               src="img/css-specyficznosc.png"
               alt="CSS css-specyficznosc"
               height="120"
             />
-            <p>
+            <p class="lesson__info">
               Maciek rekomenduję dodawać klasy do wszystkich elementów i unikać
               zagnieżdżeń
             </p>
           </section>
           <section>
-            <h4 class="main__headers">Nazewnictwo klas</h4>
-            <ul>
-              <li>używaj pojedynczych słów z j. angielskiego</li>
-              <li>nazywaj rzeczy zgodnie z ich funkcją na stronie</li>
-              <li>startuj z małej litery np. header nie Header</li>
-              <li>nie zaczynaj od cyfry</li>
-              <li>
+            <h4 class="lesson__sub-header">Nazewnictwo klas</h4>
+            <ul class="lesson__list">
+              <li class="lesson__list-element">
+                używaj pojedynczych słów z j. angielskiego
+              </li>
+              <li class="lesson__list-element">
+                nazywaj rzeczy zgodnie z ich funkcją na stronie
+              </li>
+              <li class="lesson__list-element">
+                startuj z małej litery np. header nie Header
+              </li>
+              <li class="lesson__list-element">nie zaczynaj od cyfry</li>
+              <li class="lesson__list-element">
                 jeśli musisz użyć dwóch słów użyj tzw. kebab case np.
                 news-listing
               </li>
-              <li>
+              <li class="lesson__list-element">
                 staraj się, żeby element miał jedną klasę (nie zwiększaj
                 specyficzności bez potrzeby)
               </li>
             </ul>
           </section>
 
-          <h3 class="main__headers">Podsumowanie</h3>
-          <ul>
-            <li>html class="name" = css .name</li>
-            <li>html id="name" = css #name</li>
-            <li>stylujemy po klasach (bez zagnieżdżeń!)</li>
-            <li>nazywamy klasy po angielsku zgodnie z przeznaczeniem</li>
-            <li>tworzymy klasy nawet mamy jeden element danego typu</li>
-            <li>specyficzność może dać popalić ;)</li>
-            <li>nie używamy !important i stylów inline'owych</li>
+          <h3 class="lesson__header">Podsumowanie</h3>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">html class="name" = css .name</li>
+            <li class="lesson__list-element">html id="name" = css #name</li>
+            <li class="lesson__list-element">
+              stylujemy po klasach (bez zagnieżdżeń!)
+            </li>
+            <li class="lesson__list-element">
+              nazywamy klasy po angielsku zgodnie z przeznaczeniem
+            </li>
+            <li class="lesson__list-element">
+              tworzymy klasy nawet mamy jeden element danego typu
+            </li>
+            <li class="lesson__list-element">
+              specyficzność może dać popalić ;)
+            </li>
+            <li class="lesson__list-element">
+              nie używamy !important i stylów inline'owych
+            </li>
           </ul>
         </article>
 
-        <article>
-          <h3 class="main__headers">
+        <article class="lesson">
+          <h3 class="lesson__header">
             W03E06 - jak działa internet i przeglądarka
           </h3>
           <!-- <p>F12 - uruchamia DevTools</p> -->
         </article>
 
-        <article>
-          <h3 class="main__headers">W03E07 - JavaScript aka JS</h3>
+        <article class="lesson">
+          <h3 class="lesson__header">W03E07 - JavaScript aka JS</h3>
           <!-- <p>F12 - uruchamia DevTools</p> -->
         </article>
 
-        <article>
-          <h3 class="main__headers">W03E08 - terminal</h3>
+        <article class="lesson">
+          <h3 class="lesson__header">W03E08 - terminal</h3>
           <!-- <p>F12 - uruchamia DevTools</p> -->
         </article>
       </section>
     </main>
 
     <footer class="footer">
-      <p>
-        <a href="#top">Wróć na górę</a>
+      <p class="footer__info">
+        <a class="footer__navigation-link" href="#top">Wróć na górę</a>
       </p>
-      <p>III tydzień</p>
+      <p class="footer__info">III tydzień</p>
     </footer>
 
     <script src="week3.js"></script>
