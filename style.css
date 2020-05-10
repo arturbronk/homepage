@@ -8,15 +8,27 @@
 .remember__header,
 .tricks__header,
 .week__header {
-  color: #8cbcb9;
+  color: #006e9f;
   text-transform: uppercase;
 }
 
 .body {
   background: #d7ded6;
   color: rgb(37, 35, 35);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", "Century Gothic", sans-serif;
   font-size: 18px;
+}
+
+.body__logo {
+  box-sizing: border-box;
+  width: 1000px;
+  background: #f0f7ef;
+  margin: auto;
+}
+
+.body__logo-image {
+  width: 1000px;
+  height: 300px;
 }
 
 .footer {
@@ -35,15 +47,15 @@
 
 .lesson__code-box {
   border: 2px solid grey;
-  width: 450px;
   border-left: 12px solid olive;
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
   font-family: monospace;
+  max-width: 500px;
 }
 
 .lesson__code-tag {
-  color: darkred;
+  color: #208aae;
   font-family: monospace;
   font-weight: 900;
 }
@@ -59,26 +71,31 @@
   padding: 5px;
 }
 
+.lesson__remember,
+.lesson__summary {
+  font-size: 1.1em;
+}
+
 .main {
   box-sizing: border-box;
   width: 1000px;
   background: #f0f7ef;
   padding-left: 10px;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 20px;
   margin: auto;
   margin-bottom: -20px; /*while a positive margin value pushes other elements away, a negative margin will either pull the element itself in that direction, or pull other elements toward it*/
 }
 
 .main__header--title {
-  text-shadow: 2px 2px 0 #000000;
-  font-size: 1.5em; /*overwritting default UAS font-size for the section h1 so it fits article h1 on the remaining pages*/
+  text-shadow: 2px 2px 0 #80769b;
 }
 
 .navigation {
   box-sizing: border-box;
   width: 1000px;
-  background: #9db4c0;
+  /* background: #9db4c0; */
+  background-color: rgba(1, 59, 96, 0.99);
   padding-left: 5px;
   margin: auto;
   position: fixed;
