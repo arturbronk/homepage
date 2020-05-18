@@ -306,7 +306,70 @@
           <h3 class="lesson__header">
             W03E06 - jak działa internet i przeglądarka
           </h3>
-          <!-- <p>F12 - uruchamia DevTools</p> -->
+          <p class="lesson__info">HTTPS - HyperText Transfer Protocol Secure</p>
+          <p class="lesson__info">URL - Uniform Resource Locator</p>
+          <img class="lesson__image-root" src="img/root.jpg" alt="URL root" />
+          <section>
+            <h3 class="lesson__header">/ slash - znaczenie root</h3>
+            <p class="lesson__info">https://cotenfrontend.pl/podstrona</p>
+            <p class="lesson__info">Ścieżka bezwzględna</p>
+            <p class="lesson__info">
+              <span class="lesson__code-tag">&lt;img</span>
+
+              <span class="lesson__code-attribute">
+                src="/img/wtf.svg" alt="logo"</span
+              ><span class="lesson__code-tag">&sol;&gt;</span>
+            </p>
+            <p class="lesson__info">
+              Pobiera: https://cotenfrontend.pl/img/wtf.svg
+            </p>
+            <p class="lesson__info">
+              Odpowiedź: 200 (OK) - szuka w root / -> img/wtf.svg
+            </p>
+            <p class="lesson__info">Ścieżka względna</p>
+            <p class="lesson__info">
+              <span class="lesson__code-tag">&lt;img</span>
+              <span class="lesson__code-attribute">
+                src="img/wtf.svg" alt="logo"</span
+              ><span class="lesson__code-tag">&sol;&gt;</span>
+            </p>
+            <p class="lesson__info">
+              Pobiera: https://cotenfrontend.pl/podstrona/img/wtf.svg
+            </p>
+            <p class="lesson__info">
+              Odpowiedź: 400 (not found) - szuka w podtrona/img/wtf.svg
+            </p>
+            <p class="lesson__info">
+              Scieżka z root / to ścieżka bezwzględna, ścieżka bez root / to
+              ścieżka względna
+            </p>
+          </section>
+          <section>
+            <h3 class="lesson__header">Kody odpowiedzi HTTP</h3>
+            <ul class="lesson__list">
+              <li class="lesson__list-element">1xx: hold on</li>
+              <li class="lesson__list-element">2xx: here you go</li>
+              <li class="lesson__list-element">3xx: go away</li>
+              <li class="lesson__list-element">4xx: you fucked up</li>
+              <li class="lesson__list-element">5xx: I fucked up</li>
+            </ul>
+          </section>
+          <h3 class="lesson__summary">Podsumowanie</h3>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">
+              Protokół, który obsługuje strony internetowe to HTTP
+            </li>
+            <li class="lesson__list-element">
+              Komunikacja przeglądarka-serwer odbywa się na zasadzie
+              request-response
+            </li>
+            <li class="lesson__list-element">
+              Odpowiedzi serwera mają różne kody co pozwala na diagnozę błędów
+            </li>
+            <li class="lesson__list-element">
+              Root (/) jest istotną częścią scieżek do zasobów
+            </li>
+          </ul>
         </article>
 
         <article class="lesson">
@@ -323,7 +386,7 @@
 
     <footer class="footer">
       <p class="footer__info">
-        <a class="footer__navigation-link" href="#top">Wróć na górę</a>
+        <a class="footer__navigation-link" href="#top">&uarr;</a>
       </p>
       <p class="footer__info">III tydzień</p>
     </footer>

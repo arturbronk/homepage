@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .about__header,
 .lesson__header,
 .lesson__remember,
@@ -33,10 +43,18 @@
 
 .footer {
   box-sizing: border-box;
-  width: 1000px;
-  background: #bfc5be;
-  margin: auto;
+  max-width: 1000px;
+  background: rgba(1, 59, 96, 0.99);
+  margin:0 auto;
   padding-left: 10px;
+}
+
+.footer__info
+{
+  margin-top: 0;
+  color: white;
+  text-decoration: none;  
+  
 }
 
 .lesson__code-attribute {
@@ -60,6 +78,11 @@
   font-weight: 900;
 }
 
+.lesson__image-root {
+  width: 455px;
+}
+
+
 .lesson__list--gradient {
   background: linear-gradient(green, yellow, lightblue, #d7ded6);
   width: 300px;
@@ -78,13 +101,12 @@
 
 .main {
   box-sizing: border-box;
-  width: 1000px;
+  max-width: 1000px;
   background: #f0f7ef;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 20px;
   margin: auto;
-  margin-bottom: -20px; /*while a positive margin value pushes other elements away, a negative margin will either pull the element itself in that direction, or pull other elements toward it*/
 }
 
 .main__header--title {
@@ -94,7 +116,7 @@
 .navigation {
   box-sizing: border-box;
   width: 1000px;
-  /* background: #9db4c0; */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   background-color: rgba(1, 59, 96, 0.99);
   padding-left: 5px;
   margin: auto;
@@ -107,17 +129,31 @@
   ); /*I do not understand this yet but adding fixed margins doesn't make sense?*/
 }
 
+
 .navigation__list {
   padding-inline-start: 5px;
 }
 
 .navigation__list-element {
-  padding: 5px;
-  display: inline;
+  padding: 5px 5px;
+  display: inline; 
+    
 }
 
-.navigation__list-link {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
+.navigation__list-link:hover {
+  color: aqua;
+} 
+
+/* .navigation__list-element:hover {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding: 4px 0; 
+} */
+
+.navigation__list-link,
+.footer__navigation-link
+{
+  color:white;
+  text-decoration: none;  
+  
 }
