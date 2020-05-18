@@ -8,6 +8,7 @@ html {
   box-sizing: inherit;
 }
 
+
 .about__header,
 .lesson__header,
 .lesson__remember,
@@ -23,20 +24,26 @@ html {
 }
 
 .body {
-  background: #d7ded6;
+  background: linear-gradient(rgba(1, 59, 96, 0.99), #f0f7ef);
+  /* background: #d7ded6; */
   color: rgb(37, 35, 35);
   font-family: "Raleway", "Century Gothic", sans-serif;
   font-size: 18px;
 }
 
+
 .body__logo {
+  display: flex;
+  justify-content: center;  
   box-sizing: border-box;
   width: 1000px;
   background: #f0f7ef;
-  margin: auto;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin: auto;  
 }
 
 .body__logo-image {
+  
   width: 1000px;
   height: 300px;
 }
@@ -45,6 +52,7 @@ html {
   box-sizing: border-box;
   max-width: 1000px;
   background: rgba(1, 59, 96, 0.99);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   margin:0 auto;
   padding-left: 10px;
 }
@@ -56,6 +64,7 @@ html {
   text-decoration: none;  
   
 }
+
 
 .lesson__code-attribute {
   color: green;
@@ -101,6 +110,8 @@ html {
 
 .main {
   box-sizing: border-box;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  /* background: linear-gradient #f0f7ef; */
   max-width: 1000px;
   background: #f0f7ef;
   padding-left: 10px;
@@ -111,38 +122,51 @@ html {
 
 .main__header--title {
   text-shadow: 2px 2px 0 #80769b;
+  display: flex;
+  justify-content: center;
 }
 
-.navigation {
+.navigation {  
   box-sizing: border-box;
   width: 1000px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   background-color: rgba(1, 59, 96, 0.99);
-  padding-left: 5px;
+  /* padding-left: 5px; */
   margin: auto;
-  position: fixed;
-  left: 50%;
-  right: 50%;
+  /* position: fixed; */
+  /* left: 50%;
+  right: 50%; */
   top: 0;
-  transform: translateX(
+  /* transform: translateX(
     -50%
-  ); /*I do not understand this yet but adding fixed margins doesn't make sense?*/
+  ); I do not understand this yet but adding fixed margins doesn't make sense? */ 
 }
 
 
 .navigation__list {
-  padding-inline-start: 5px;
+  padding-inline-start: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 10px;
+  
+}
+
+.navigation__list-link {  
+  color:white;
+  text-decoration: none;  
+  
 }
 
 .navigation__list-element {
-  padding: 5px 5px;
+  /* padding: 5px 5px;  */
   display: inline; 
     
 }
 
 .navigation__list-link:hover {
   color: aqua;
-} 
+}
 
 /* .navigation__list-element:hover {
   border-top: 1px solid #ffffff;
@@ -150,9 +174,10 @@ html {
   padding: 4px 0; 
 } */
 
-.navigation__list-link,
+
 .footer__navigation-link
 {
+  
   color:white;
   text-decoration: none;  
   
