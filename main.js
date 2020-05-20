@@ -10,3 +10,5 @@ console.log(
 alert(
   `Witam na stronie ${firstName}. Weź ze sobą łyk ${product} bo bez ${product} człowiek niemrawy.`
 );
+
+

@@ -65,6 +65,14 @@ html {
   
 }
 
+.footer__navigation-link
+{
+  
+  color:white;
+  text-decoration: none;  
+  
+}
+
 
 .lesson__code-attribute {
   color: green;
@@ -175,10 +183,3 @@ html {
 } */
 
 
-.footer__navigation-link
-{
-  
-  color:white;
-  text-decoration: none;  
-  
-}
