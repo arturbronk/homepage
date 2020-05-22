@@ -1,32 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid</title>
-    <link href="normalize.css" rel="stylesheet" type="text/css" />
-    <link href="grid.css" rel="stylesheet" type="text/css" />
+    <title>Arturo cotenfrontend</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700&amp;display=swap&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div class="grid">
-      <div class="grid__element grid__element--1">
-        1
+
+  <body class="body">
+    <header>
+      <div class="body__logo">
+        <img class="body__logo-image" src="img/banner.jpg" alt="logo image" />
       </div>
-      <div class="grid__element grid__element--2">
-        2
-      </div>
-      <div class="grid__element grid__element--3">
-        3
-      </div>
-      <div class="grid__element grid__element--4">
-        4
-      </div>
-      <div class="grid__element grid__element--5">
-        5
-      </div>
-      <div class="grid__element grid__element--6">
-        6
-      </div>
-    </div>
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="index.html">Home</a>
+          </li>
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="week2.html">II week</a>
+          </li>
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="week3.html">III week</a>
+          </li>
+          <li class="navigation__list-element">
+            <a class="navigation__list-link" href="grid.html">GRID</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header>
+        <h1 class="main__header main__header--title">
+          SZKOLENIE WTF - 13 TYGODNI
+        </h1>
+      </header>
+      <section class="week__II">
+        <header class="week__section-header">
+          <h2 class="week__header">Tydzień II</h2>
+        </header>
+        <article class="lesson__W02E02">
+          <h3 class="lesson__header">W02E02 - warstwy strony</h3>
+          <ol start="0" class="lesson__list--gradient">
+            <li class="lesson__list-element">JavaScript</li>
+            <li class="lesson__list-element">CSS</li>
+            <li class="lesson__list-element">HTML</li>
+            <li class="lesson__list-element">Treść</li>
+          </ol>
+        </article>
+        <article class="lesson__W02E03">
+          <h3 class="lesson__header">W02E03 - HTML</h3>
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;znacznik</span>
+            <span class="lesson__code-attribute">atrybut = "wartość"</span
+            ><span class="lesson__code-tag">&gt;</span>treść<span
+              class="lesson__code-tag"
+              >&lt;&sol;znacznik&gt;</span
+            >
+          </p>
+          <p class="lesson__info">
+            HTML jest semantyczny czyli mający znaczenie.
+          </p>
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;main&gt;</span> - główna część
+            dokumentu
+          </p>
+          <p class="lesson-info">
+            <span class="lesson__code-tag">&lt;section&gt;</span> - sekcje
+            dokumentu
+          </p>
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;article&gt;</span> - samodzielne
+            treści
+          </p>
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;header&gt;</span> - nagłówek
+            dokumentu, sekcji czy artykułu
+          </p>
+          <p class="lesson__info">
+            <span class="lesson__code-tag">&lt;footer&gt;</span> - stopka
+            dokumentu
+          </p>
+          <h3 class="lesson__summary">Podsumowanie</h3>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">
+              HTML opakowuje i opisuje treść strony
+            </li>
+            <li class="lesson__list-element">
+              Mówi przeglądarce o strukturze dokumentu i co wczytać
+            </li>
+            <li class="lesson__list-element">Posiada zdefiniowaną składnię</li>
+            <li class="lesson__list-element">
+              Jest językiem znaczników (Markup Language)
+            </li>
+            <li class="lesson__list-element">
+              Aktualna wersja to 5.2 - specyfikacja na w3c
+            </li>
+          </ul>
+          <h3 class="lesson__remember">Zapamiętaj</h3>
+          <p class="lesson__info">
+            Każdy element
+            <span class="lesson__code-tag">&lt;section&gt;</span> powinien
+            zazwyczaj zawierać nagłówek (&lt;h1&gt;-&lt;h6&gt;) jako element
+            potomny <span class="lesson__code-tag">&lt;section&gt;</span>.
+          </p>
+        </article>
+        <article class="lesson__W02E04">
+          <h3 class="lesson__header">W02E04 - CSS</h3>
+          <div class="lesson__code-box">
+            selector {<br />
+            właściwość: wartość;<br />
+            }
+          </div>
+          <h3 class="lesson__summary">Podsumowanie</h3>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">
+              Selektor wybiera co chcemy ostylować
+            </li>
+            <li class="lesson__list-element">
+              CSS odpowaida za prezentację treści strony
+            </li>
+            <li class="lesson__list-element">CSS nie ma wersji: moduł 3</li>
+            <li class="lesson__list-element">
+              Przeglądarki różnie interpretują style (w3c)
+            </li>
+          </ul>
+        </article>
+        <article class="lesson__W02E05">
+          <h3 class="lesson__header">W02E05 - magia programowania</h3>
+          <p class="lesson__info">Algorytmy - omówienie schematów blokowych</p>
+          <p class="lesson__info">JS JavaScript</p>
+          <ul class="lesson__list">
+            <li class="lesson__list-element">Odpowiada za interakcje</li>
+            <li class="lesson__list-element">
+              Pozwala na programowanie w frontend
+            </li>
+            <li class="lesson__list-element">
+              Potrafi wpłynąć na każdą z wartw
+            </li>
+            <li class="lesson__list-element">
+              Rozszerza możliwości zwykłych stron
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__info">
+        <a class="footer__navigation-link" href="#top">&uarr;</a>
+      </p>
+      <p class="footer__info">II tydzień</p>
+    </footer>
   </body>
 </html>

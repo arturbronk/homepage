@@ -8,7 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-
 .about__header,
 .lesson__header,
 .lesson__remember,
@@ -31,19 +30,17 @@ html {
   font-size: 18px;
 }
 
-
 .body__logo {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   box-sizing: border-box;
   width: 1000px;
   background: #f0f7ef;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  margin: auto;  
+  margin: auto;
 }
 
 .body__logo-image {
-  
   width: 1000px;
   height: 300px;
 }
@@ -53,26 +50,20 @@ html {
   max-width: 1000px;
   background: rgba(1, 59, 96, 0.99);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  margin:0 auto;
+  margin: 0 auto;
   padding-left: 10px;
 }
 
-.footer__info
-{
+.footer__info {
   margin-top: 0;
   color: white;
-  text-decoration: none;  
-  
+  text-decoration: none;
 }
 
-.footer__navigation-link
-{
-  
-  color:white;
-  text-decoration: none;  
-  
+.footer__navigation-link {
+  color: white;
+  text-decoration: none;
 }
-
 
 .lesson__code-attribute {
   color: green;
@@ -99,7 +90,6 @@ html {
   width: 455px;
 }
 
-
 .lesson__list--gradient {
   background: linear-gradient(green, yellow, lightblue, #d7ded6);
   width: 300px;
@@ -122,9 +112,7 @@ html {
   /* background: linear-gradient #f0f7ef; */
   max-width: 1000px;
   background: #f0f7ef;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 10px;
   margin: auto;
 }
 
@@ -134,7 +122,7 @@ html {
   justify-content: center;
 }
 
-.navigation {  
+.navigation {
   box-sizing: border-box;
   width: 1000px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
@@ -145,11 +133,7 @@ html {
   /* left: 50%;
   right: 50%; */
   top: 0;
-  /* transform: translateX(
-    -50%
-  ); I do not understand this yet but adding fixed margins doesn't make sense? */ 
 }
-
 
 .navigation__list {
   padding-inline-start: 0;
@@ -157,29 +141,80 @@ html {
   justify-content: space-around;
   margin: 0;
   padding: 10px;
-  
 }
 
-.navigation__list-link {  
-  color:white;
-  text-decoration: none;  
-  
+.navigation__list-link {
+  color: white;
+  text-decoration: none;
 }
 
 .navigation__list-element {
   /* padding: 5px 5px;  */
-  display: inline; 
-    
+  display: inline;
 }
 
 .navigation__list-link:hover {
   color: aqua;
 }
 
-/* .navigation__list-element:hover {
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
-  padding: 4px 0; 
-} */
+
+/* GRID styling - GRID classes added to test GRID for grid.html */
+
+.week__section-header {
+  /* grid-area: header; */
+  background: lightyellow;
+  /* grid-column-start: first;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 2; */
+  /* grid-area: 1 / 1 / 2 / 4; */
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  /* z-index: -1; */
+}
+
+.week__II {
+  display: grid;
+  grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
+  grid-template-rows: auto;
+  row-gap: 2px;
+  column-gap: 2px;
+}
 
 
+
+.lesson__W02E02 {
+  padding: 10px;
+  /* grid-area: W02E02; */
+  background: yellowgreen;
+  /* grid-area: 2 / 1 / 3 / 2; */
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.lesson__W02E03 {
+  padding: 10px;
+  grid-area: W02E03;
+  background: lightpink;
+  /* grid-area: 2 / 2 / 4 / 4; */
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+}
+
+.lesson__W02E04 {
+  padding: 10px;
+  /* grid-area: W02E04; */
+  background: lightseagreen;
+  /* grid-area: 3 / 1 / 4 / 2;  */
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.lesson__W02E05 {
+  padding: 10px;
+  /* grid-area: W02E05; */
+  background: lightskyblue;
+  /* grid-area: 4 /1 / 5 /4; */
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
+}
