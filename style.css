@@ -66,6 +66,10 @@ html {
   text-decoration: none;
 }
 
+.hamburger{
+  display: none;
+}
+
 .lesson__code-attribute {
   color: green;
   font-family: monospace;
@@ -159,6 +163,10 @@ html {
   color: aqua;
 }
 
+.klasa-z-js {
+  font-style: italic;
+}
+
 
 /* GRID styling - GRID classes added to test GRID for grid.html */
 
@@ -227,8 +235,33 @@ html {
   background: lightgreen;
 } 
 
+.body__logo-image{
+display: none;
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  border: none;
+  background: none;
+}
+
+.header{
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
 .week--II {
   display: block;
+}
+
+.main{
+  margin: 60px auto 0;
 }
 
 .main__header--title {
@@ -245,6 +278,33 @@ html {
 
 .lesson__image-root {
   max-width: 90%;
+}
+
+.navigation {
+  display: none;  
+  }
+
+.navigation--open{
+  display: block;
+  
+}
+
+.navigation__list-element {
+  display: block;
+  padding: 2px;
+}
+
+.navigation__list {
+  padding-inline-start: 0;
+  display: block;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.navigation__list-link {
+  color: white;
+  text-decoration: none;
+  
 }
 
 
