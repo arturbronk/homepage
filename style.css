@@ -85,10 +85,33 @@ html {
   max-width: 500px;
 }
 
+.lesson__code-box:hover {
+  border-left: 12px solid lightcoral;
+  
+
+}
+
 .lesson__code-tag {
   color: #208aae;
   font-family: monospace;
   font-weight: 900;
+}
+
+.lesson__header::before{
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #006e9f;
+  border-radius: 50%;
+  
+
+  
+
+}
+.lesson__header::after{
+  content: " |";
+
 }
 
 .lesson__image-root {
@@ -218,6 +241,10 @@ html {
   grid-column: 1 / 2;
 }
 
+.lesson--W02E05:last-child {  /*pseudoklasa*/
+  background: rgb(190, 201, 212);
+}
+
 .lesson--W02E05 {
   padding: 10px;
   /* grid-area: W02E05; */
@@ -226,6 +253,8 @@ html {
   grid-row: 4 / 5;
   grid-column: 1 / 4;
 }
+
+
 
 /* Media queries  */
 
