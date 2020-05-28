@@ -239,15 +239,14 @@ html {
   }
 }
 
-/* Media queries  */
+/* MEDIA QUERIES  */
 
 @media screen and (max-width: 767px) {
   .body {
     background: lightgreen;
-  }
-
-  .body__logo-image {
-    display: none;
+    &__logo-image {
+      display: none;
+    }
   }
 
   .hamburger {
@@ -266,16 +265,11 @@ html {
     width: 100%;
   }
 
-  .week--II {
-    display: block;
-  }
-
   .main {
     margin: 60px auto 0;
-  }
-
-  .main__header--title {
-    display: none;
+    &__header--title {
+      display: none;
+    }
   }
 
   .list__gradient {
@@ -298,19 +292,19 @@ html {
       justify-content: space-around;
       margin: 0;
     }
+    &__list-element {
+      display: block;
+      padding: 2px;
+    }
+    &__list-link {
+      color: white;
+      text-decoration: none;
+    }
+    &--open {
+      display: block;
+    }
   }
-
-  .navigation--open {
+  .week--II {
     display: block;
-  }
-
-  .navigation__list-element {
-    display: block;
-    padding: 2px;
-  }
-
-  .navigation__list-link {
-    color: white;
-    text-decoration: none;
   }
 }

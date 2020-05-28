@@ -18,6 +18,7 @@ button.addEventListener("click", () => {
   const myHeading = document.querySelector(".week__header--js");
   myHeading.innerHTML = "Siedzi babcia na laweczce a dziadek tez ma kalosze!";
   myHeading.classList.toggle("klasa-z-js"); //zamienia klase .week__header--js and klasa-z-js
+});
 
 button.addEventListener("mouseenter", () => {
   const myHeading = document.querySelector(".week__header--js");
@@ -28,4 +29,3 @@ button.addEventListener("mouseleave", () => {
   const myHeading = document.querySelector(".week__header--js");
   myHeading.innerHTML = "Czemu nie kliknąłeś?";
 });
-

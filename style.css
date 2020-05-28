@@ -207,12 +207,12 @@ html {
   /*pseudoklasa*/
   background: #bec9d4; }
 
-/* Media queries  */
+/* MEDIA QUERIES  */
 @media screen and (max-width: 767px) {
   .body {
     background: lightgreen; }
-  .body__logo-image {
-    display: none; }
+    .body__logo-image {
+      display: none; }
   .hamburger {
     display: block;
     position: absolute;
@@ -225,12 +225,10 @@ html {
     position: fixed;
     top: 0;
     width: 100%; }
-  .week--II {
-    display: block; }
   .main {
     margin: 60px auto 0; }
-  .main__header--title {
-    display: none; }
+    .main__header--title {
+      display: none; }
   .list__gradient {
     background: lightgreen;
     max-width: 300px;
@@ -246,11 +244,13 @@ html {
       display: block;
       justify-content: space-around;
       margin: 0; }
-  .navigation--open {
-    display: block; }
-  .navigation__list-element {
-    display: block;
-    padding: 2px; }
-  .navigation__list-link {
-    color: white;
-    text-decoration: none; } }
+    .navigation__list-element {
+      display: block;
+      padding: 2px; }
+    .navigation__list-link {
+      color: white;
+      text-decoration: none; }
+    .navigation--open {
+      display: block; }
+  .week--II {
+    display: block; } }
