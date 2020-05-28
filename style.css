@@ -7,11 +7,6 @@ html {
   box-sizing: inherit; }
 
 .about__header,
-.lesson__header,
-.lesson__remember,
-.lesson__sub-header,
-.lesson__summary,
-.main__header,
 .notes__header,
 .remember__header,
 .tricks__header,
@@ -25,20 +20,18 @@ html {
   color: #252323;
   font-family: "Raleway", "Century Gothic", sans-serif;
   font-size: 18px; }
-
-.body__logo {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  max-width: 1000px;
-  max-height: 300px;
-  background: #f0f7ef;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  margin: auto; }
-
-.body__logo-image {
-  width: 100%;
-  height: 100%; }
+  .body__logo {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 1000px;
+    max-height: 300px;
+    background: #f0f7ef;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin: auto; }
+  .body__logo-image {
+    width: 100%;
+    height: 100%; }
 
 .footer {
   box-sizing: border-box;
@@ -51,13 +44,15 @@ html {
     margin-top: 0;
     color: white;
     text-decoration: none; }
-
-.footer__navigation-link {
-  color: white;
-  text-decoration: none; }
+  .footer__navigation-link {
+    color: white;
+    text-decoration: none; }
 
 .hamburger {
   display: none; }
+
+.klasa-z-js {
+  font-style: italic; }
 
 .lesson__code-attribute {
   color: green;
@@ -80,6 +75,10 @@ html {
   font-family: monospace;
   font-weight: 900; }
 
+.lesson__header {
+  color: #006e9f;
+  text-transform: uppercase; }
+
 .lesson__header::before {
   content: "";
   display: inline-block;
@@ -94,18 +93,22 @@ html {
 .lesson__image-root {
   max-width: 60%; }
 
+.lesson__remember, .lesson__lesson__summary {
+  color: #006e9f;
+  text-transform: uppercase;
+  font-size: 1.1em; }
+
+.lesson__sub-header {
+  color: #006e9f;
+  text-transform: uppercase; }
+
 .list-gradient {
   background: linear-gradient(green, yellow, lightblue, #d7ded6);
   max-width: 300px;
   border-radius: 5px;
   box-sizing: border-box; }
-
-.list-gradient__element {
-  padding: 5px; }
-
-.lesson__remember,
-.lesson__summary {
-  font-size: 1.1em; }
+  .list-gradient__element {
+    padding: 5px; }
 
 .main {
   box-sizing: border-box;
@@ -115,11 +118,13 @@ html {
   background: #f0f7ef;
   padding: 10px;
   margin: auto; }
-
-.main__header--title {
-  text-shadow: 2px 2px 0 #80769b;
-  display: flex;
-  justify-content: center; }
+  .main__header {
+    color: #006e9f;
+    text-transform: uppercase; }
+  .main__header--title {
+    text-shadow: 2px 2px 0 #80769b;
+    display: flex;
+    justify-content: center; }
 
 .navigation {
   box-sizing: border-box;
@@ -133,26 +138,19 @@ html {
     right: 50%; */
   top: 0;
   padding-top: 10px; }
-
-.navigation__list {
-  padding-inline-start: 0;
-  display: flex;
-  justify-content: space-around;
-  margin: 0; }
-
-.navigation__list-link {
-  color: white;
-  text-decoration: none; }
-
-.navigation__list-element {
-  padding: 15px;
-  display: inline; }
-
-.navigation__list-link:hover {
-  color: aqua; }
-
-.klasa-z-js {
-  font-style: italic; }
+  .navigation__list-link {
+    color: white;
+    text-decoration: none; }
+  .navigation__list {
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0; }
+  .navigation__list-link:hover {
+    color: aqua; }
+  .navigation__list-element {
+    padding: 15px;
+    display: inline; }
 
 /* GRID styling - GRID classes added to test GRID for grid.html */
 .week__section-header {

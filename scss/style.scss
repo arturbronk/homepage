@@ -8,18 +8,17 @@ html {
   box-sizing: inherit;
 }
 
+@mixin blue-header-upper{
+  color:#006e9f;
+  text-transform: uppercase;
+}
+
 .about__header,
-.lesson__header,
-.lesson__remember,
-.lesson__sub-header,
-.lesson__summary,
-.main__header,
 .notes__header,
 .remember__header,
 .tricks__header,
 .week__header {
-  color: #006e9f;
-  text-transform: uppercase;
+  @include blue-header-upper;
 }
 
 .body {
@@ -28,22 +27,19 @@ html {
   color: rgb(37, 35, 35);
   font-family: "Raleway", "Century Gothic", sans-serif;
   font-size: 18px;
-}
-
-.body__logo {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  max-width: 1000px;
-  max-height: 300px;
-  background: #f0f7ef;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  margin: auto;
-}
-
-.body__logo-image {
-  width: 100%;
-  height: 100%;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 1000px;
+    max-height: 300px;
+    background: #f0f7ef;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin: auto;}
+    &__logo-image {
+      width: 100%;
+      height: 100%;
+    }
 }
 
 .footer {
@@ -58,56 +54,67 @@ html {
     color: white;
     text-decoration: none;
   }
-}
-
-.footer__navigation-link {
-  color: white;
-  text-decoration: none;
+  &__navigation-link {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .hamburger {
   display: none;
 }
 
-.lesson__code-attribute {
-  color: green;
-  font-family: monospace;
-  font-weight: bold;
+.klasa-z-js {
+  font-style: italic;
 }
 
-.lesson__code-box {
-  border: 2px solid grey;
-  border-left: 12px solid olive;
-  border-radius: 5px;
-  padding: 10px 10px 10px 10px;
-  font-family: monospace;
-  max-width: 500px;
-}
-
-.lesson__code-box:hover {
-  border-left: 12px solid lightcoral;
-}
-
-.lesson__code-tag {
+.lesson {
+  &__code-attribute {
+    color: green;
+    font-family: monospace;
+    font-weight: bold;
+  }
+  &__code-box {
+    border: 2px solid grey;
+    border-left: 12px solid olive;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    font-family: monospace;
+    max-width: 500px;
+  }
+  &__code-box:hover {
+    border-left: 12px solid lightcoral;
+  }
+  &__code-tag {
   color: #208aae;
   font-family: monospace;
   font-weight: 900;
-}
-
-.lesson__header::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: #006e9f;
-  border-radius: 50%;
-}
-.lesson__header::after {
-  content: " |";
-}
-
-.lesson__image-root {
-  max-width: 60%;
+  }
+  &__header{
+    @include blue-header-upper;
+  }
+  &__header::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #006e9f;
+    border-radius: 50%;
+  }
+  &__header::after {
+    content: " |";
+  }
+  &__image-root {
+    max-width: 60%;
+  }
+  &__remember,
+  &__lesson__summary {
+    @include blue-header-upper;
+    font-size: 1.1em;
+  }
+  &__sub-header{
+    @include blue-header-upper;
+  }
 }
 
 .list-gradient {
@@ -115,15 +122,9 @@ html {
   max-width: 300px;
   border-radius: 5px;
   box-sizing: border-box;
-}
-
-.list-gradient__element {
-  padding: 5px;
-}
-
-.lesson__remember,
-.lesson__summary {
-  font-size: 1.1em;
+  &__element {
+    padding: 5px;
+  }
 }
 
 .main {
@@ -134,13 +135,16 @@ html {
   background: #f0f7ef;
   padding: 10px;
   margin: auto;
+  &__header {
+    @include blue-header-upper;
+  }
+  &__header--title {
+    text-shadow: 2px 2px 0 #80769b;
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.main__header--title {
-  text-shadow: 2px 2px 0 #80769b;
-  display: flex;
-  justify-content: center;
-}
 
 .navigation {
   box-sizing: border-box;
@@ -154,32 +158,26 @@ html {
     right: 50%; */
   top: 0;
   padding-top: 10px;
+  &__list-link {
+    color: white;
+    text-decoration: none;
+  }
+  &__list {
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+  &__list-link:hover {
+    color: aqua;
+  }
+  &__list-element {
+    padding: 15px;
+    display: inline;
+  }
 }
 
-.navigation__list {
-  padding-inline-start: 0;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-}
 
-.navigation__list-link {
-  color: white;
-  text-decoration: none;
-}
-
-.navigation__list-element {
-  padding: 15px;
-  display: inline;
-}
-
-.navigation__list-link:hover {
-  color: aqua;
-}
-
-.klasa-z-js {
-  font-style: italic;
-}
 
 /* GRID styling - GRID classes added to test GRID for grid.html */
 
